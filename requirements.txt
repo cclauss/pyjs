@@ -1,4 +1,4 @@
-PyV8>=1.0-dev
+PyV8  # >=1.0-dev  # https://pypi.org/project/PyV8/#history
 nose>=1.3.0
 selenium>=2.21.2
 virtualenv>=1.10.1
