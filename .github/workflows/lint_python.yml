@@ -12,7 +12,8 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - run: pip install  black codespell flake8 isort pytest pyupgrade
+      - run: pip install --upgrade pip
+      - run: pip install codespell flake8 isort pytest pyupgrade
       - if: matrix.python-version >= 3.6
         run: |
           pip install bandit black
