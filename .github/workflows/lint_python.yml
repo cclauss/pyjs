@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - run: sudo apt-get install libv8-dev
+      - run: sudo apt-get install libboost-thread-dev libboost-system-dev libboost-python-dev libboost-python3-dev libv8-dev
       - run: pip install --upgrade pip
       - run: pip install codespell flake8 isort pytest pyupgrade
       - if: matrix.python-version >= 3.6
